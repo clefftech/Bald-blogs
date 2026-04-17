@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best RuneLite Plugins 2026 | bald.gg</title>
+  <meta name="description" content="The best RuneLite plugins in 2026 — top picks for skilling, combat, QoL, and the new Sailing skill. Updated regularly by the bald.gg team." />
+  <link rel="canonical" href="https://bald.gg/blog/best-runelite-plugins" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0e0f; --bg-surface: #141516; --bg-raised: #1a1b1d; --bg-hover: #212224;
+      --border: #2a2b2e; --gold: #c8a84b; --gold-dim: #a88a36; --gold-bright: #e8c86b;
+      --gold-faint: rgba(200,168,75,0.06); --gold-glow: rgba(200,168,75,0.18);
+      --text: #e2ddd4; --text-muted: #8a8680; --text-dim: #5a5855;
+      --green: #4caf7d; --green-bg: rgba(76,175,125,0.1);
+      --font-heading: 'Cinzel', serif; --font-body: 'Source Serif 4', serif; --font-mono: 'JetBrains Mono', monospace;
+      --gap: 24px; --content-width: 780px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 1rem; line-height: 1.75; min-height: 100vh; overflow-x: hidden; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-bright); text-decoration: underline; }
+
+    /* NAV */
+    .site-nav { background: var(--bg-surface); border-bottom: 1px solid var(--border); padding: 0 var(--gap); display: flex; align-items: center; height: 52px; gap: 28px; position: sticky; top: 0; z-index: 100; }
+    .site-nav .logo { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--gold); letter-spacing: 0.04em; }
+    .site-nav .logo:hover { text-decoration: none; color: var(--gold-bright); }
+    .nav-links { display: flex; gap: 20px; align-items: center; font-size: 0.85rem; font-family: var(--font-mono); }
+    .nav-links a { color: var(--text-muted); transition: color 0.15s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta { margin-left: auto; background: var(--gold); color: #0d0e0f; padding: 7px 18px; border-radius: 3px; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; transition: background 0.15s; }
+    .nav-cta:hover { background: var(--gold-bright); text-decoration: none; color: #0d0e0f; }
+
+    /* BREADCRUMB */
+    .breadcrumb { padding: 10px var(--gap); font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-dim); border-bottom: 1px solid var(--border); background: var(--bg-surface); }
+    .breadcrumb a { color: var(--text-muted); }
+    .breadcrumb span { color: var(--text-dim); margin: 0 6px; }
+
+    /* HERO */
+    .post-hero { position: relative; padding: 64px var(--gap) 56px; text-align: center; overflow: hidden; border-bottom: 1px solid var(--border); }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,75,0.10) 0%, transparent 70%), radial-gradient(ellipse 40% 30% at 20% 100%, rgba(200,168,75,0.04) 0%, transparent 60%); pointer-events: none; }
+    .hero-bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(200,168,75,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(200,168,75,0.04) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 70%); }
+    .post-hero-inner { position: relative; max-width: var(--content-width); margin: 0 auto; }
+    .post-category-badge { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); background: var(--gold-faint); border: 1px solid var(--gold-dim); padding: 5px 14px; border-radius: 2px; margin-bottom: 20px; }
+    .post-category-badge::before { content: '✦'; font-size: 0.6rem; }
+    .post-hero h1 { font-family: var(--font-heading); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.01em; color: var(--text); margin-bottom: 18px; }
+    .post-hero h1 em { color: var(--gold); font-style: normal; }
+    .post-meta { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); }
+    .post-meta span { display: flex; align-items: center; gap: 6px; }
+    .post-meta .dot { color: var(--border); }
+
+    /* LAYOUT */
+    .post-layout { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 260px; gap: 48px; padding: 48px var(--gap); align-items: start; }
+    .post-content { min-width: 0; }
+
+    /* TYPOGRAPHY */
+    .post-content h2 { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--text); margin: 48px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); position: relative; }
+    .post-content h2::before { content: ''; position: absolute; bottom: -1px; left: 0; width: 48px; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); }
+    .post-content h3 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 600; color: var(--gold); margin: 32px 0 12px; }
+    .post-content h4 { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 24px 0 8px; }
+    .post-content p { color: var(--text-muted); margin-bottom: 16px; line-height: 1.8; }
+    .post-content p:first-child { font-size: 1.08rem; color: var(--text); }
+    .post-content ul, .post-content ol { padding-left: 20px; margin-bottom: 16px; }
+    .post-content li { color: var(--text-muted); margin-bottom: 8px; line-height: 1.7; }
+    .post-content li strong { color: var(--text); }
+    .post-content strong { color: var(--text); }
+    .post-content em { color: var(--gold-bright); font-style: normal; }
+
+    /* IMAGES */
+    .post-img { width: 100%; border-radius: 4px; border: 1px solid var(--border); margin: 24px 0; display: block; }
+
+    /* PLUGIN CARDS */
+    .plugin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    .plugin-card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: border-color 0.2s; }
+    .plugin-card:hover { border-color: var(--gold-dim); }
+    .plugin-card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--bg-raised); image-rendering: pixelated; }
+    .plugin-card-img-placeholder { width: 100%; aspect-ratio: 16/9; background: var(--bg-raised); display: flex; align-items: center; justify-content: center; }
+    .plugin-card-img-placeholder span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
+    .plugin-card-body { padding: 14px 16px; }
+    .plugin-card-name { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .plugin-card-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* FULL WIDTH PLUGIN (sailing section) */
+    .plugin-item { display: flex; gap: 16px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin-bottom: 14px; transition: border-color 0.2s; }
+    .plugin-item:hover { border-color: var(--gold-dim); }
+    .plugin-item-img { width: 160px; flex-shrink: 0; object-fit: cover; background: var(--bg-raised); image-rendering: pixelated; }
+    .plugin-item-img-placeholder { width: 160px; flex-shrink: 0; background: var(--bg-raised); display: flex; align-items: center; justify-content: center; padding: 12px; }
+    .plugin-item-img-placeholder span { font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; text-align: center; }
+    .plugin-item-body { padding: 14px 16px; }
+    .plugin-item-name { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .plugin-item-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* TAGS */
+    .tag { font-family: var(--font-mono); font-size: 0.68rem; color: var(--green); background: var(--green-bg); padding: 1px 7px; border-radius: 2px; white-space: nowrap; }
+    .tag-gold { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gold); background: var(--gold-faint); border: 1px solid var(--gold-dim); padding: 1px 7px; border-radius: 2px; white-space: nowrap; }
+
+    /* CALLOUT / TIP */
+    .callout { background: var(--gold-faint); border: 1px solid var(--gold-dim); border-left: 3px solid var(--gold); border-radius: 3px; padding: 16px 18px; margin: 24px 0; font-size: 0.92rem; color: var(--text-muted); }
+    .callout strong { color: var(--gold); }
+    .tip-box { background: rgba(76,175,125,0.06); border: 1px solid rgba(76,175,125,0.25); border-left: 3px solid var(--green); border-radius: 3px; padding: 16px 18px; margin: 24px 0; font-size: 0.92rem; color: var(--text-muted); }
+    .tip-box strong { color: var(--green); }
+
+    /* STAT ROW */
+    .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+    .stat-card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; padding: 18px 16px; text-align: center; }
+    .stat-card .sv { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .stat-card .sl { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin-top: 6px; }
+
+    /* HOW TO INSTALL STEPS */
+    .steps { counter-reset: step; margin: 20px 0; }
+    .step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+    .step:last-child { border-bottom: none; }
+    .step-num { counter-increment: step; width: 28px; height: 28px; flex-shrink: 0; background: var(--gold-faint); border: 1px solid var(--gold-dim); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; color: var(--gold); }
+    .step-num::before { content: counter(step); }
+    .step-body { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .step-body strong { color: var(--text); }
+
+    /* FAQ */
+    .faq-item { border: 1px solid var(--border); border-radius: 4px; margin-bottom: 8px; overflow: hidden; }
+    .faq-q { padding: 14px 16px; font-family: var(--font-heading); font-size: 0.88rem; font-weight: 600; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: var(--bg-raised); user-select: none; }
+    .faq-q:hover { background: var(--bg-hover); }
+    .faq-q .faq-arrow { color: var(--gold); font-size: 0.8rem; transition: transform 0.2s; flex-shrink: 0; margin-left: 12px; }
+    .faq-a { padding: 0 16px; font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.2s; background: var(--bg); }
+    .faq-item.open .faq-a { max-height: 400px; padding: 14px 16px; }
+    .faq-item.open .faq-arrow { transform: rotate(90deg); }
+
+    /* SIDEBAR */
+    .post-sidebar { position: sticky; top: 72px; }
+    .sidebar-card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin-bottom: 16px; }
+    .sidebar-card-head { padding: 12px 16px; background: var(--bg-raised); border-bottom: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-dim); }
+    .sidebar-card-body { padding: 16px; }
+    .toc-list { list-style: none; padding: 0; }
+    .toc-list li { border-bottom: 1px solid var(--border); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a { display: block; padding: 8px 4px; font-size: 0.82rem; color: var(--text-muted); transition: color 0.15s, padding-left 0.15s; font-family: var(--font-mono); }
+    .toc-list a:hover { color: var(--gold); padding-left: 6px; text-decoration: none; }
+    .toc-list a.active { color: var(--gold); }
+    .quick-stat { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.83rem; }
+    .quick-stat:last-child { border-bottom: none; }
+    .qs-label { color: var(--text-muted); font-family: var(--font-mono); font-size: 0.75rem; }
+    .qs-val { color: var(--text); font-weight: 600; font-family: var(--font-mono); font-size: 0.78rem; }
+    .qs-val.gold { color: var(--gold); }
+    .qs-val.green { color: var(--green); }
+
+    /* DIVIDER / FOOTER */
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 0; }
+    .site-footer { border-top: 1px solid var(--border); background: var(--bg-surface); padding: 28px var(--gap); font-size: 0.82rem; color: var(--text-dim); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a { color: var(--text-dim); }
+    .footer-links a:hover { color: var(--text-muted); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) { .post-layout { grid-template-columns: 1fr; } .post-sidebar { position: static; } .stat-row { grid-template-columns: repeat(2, 1fr); } .nav-links { display: none; } .plugin-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } .plugin-item { flex-direction: column; } .plugin-item-img, .plugin-item-img-placeholder { width: 100%; aspect-ratio: 16/9; } }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .post-hero-inner > * { animation: fadeUp 0.5s ease both; }
+    .post-category-badge { animation-delay: 0s; }
+    .post-hero h1 { animation-delay: 0.1s; }
+    .post-meta { animation-delay: 0.2s; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="https://bald.gg/" class="logo">bald.gg</a>
+  <div class="nav-links">
+    <a href="https://bald.gg/services">Services</a>
+    <a href="https://bald.gg/gold">Gold</a>
+    <a href="https://bald.gg/ourteam">Our Team</a>
+    <a href="https://bald.gg/why-trust-us">Why Trust Us</a>
+  </div>
+  <a href="https://bald.gg/bald-plus" class="nav-cta">Get Bald+</a>
+</nav>
+
+<div class="breadcrumb">
+  <a href="https://bald.gg/">Home</a><span>›</span>
+  <a href="https://bald.gg/blog">Blog</a><span>›</span>
+  Best RuneLite Plugins
+</div>
+
+<section class="post-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-grid"></div>
+  <div class="post-hero-inner">
+    <div class="post-category-badge">Client Guide</div>
+    <h1>Best RuneLite Plugins <em>2026</em></h1>
+    <div class="post-meta">
+      <span>Tons of XP Team</span>
+      <span class="dot">·</span>
+      <span>2026-04-17</span>
+      <span class="dot">·</span>
+      <span>Quality of Life</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="post-layout">
+  <article class="post-content">
+
+    <p>The original Old School RuneScape client has improved over time, but RuneLite is still miles ahead. It offers a huge range of features that are hard to ignore, and developers consistently push updates that improve both new and existing content.</p>
+    <p>In my opinion, players should stay up to date with the latest RuneLite plugins. If you're not using them, you should be. The right plugins can make the game feel much smoother, whether you're doing content you already enjoy or trying something you've been putting off because it felt too difficult.</p>
+    <p>This guide covers some of the best and most recent plugins that are actually worth using. With over 1,000 plugins available, it's easy to feel overwhelmed, so I've narrowed it down to the ones that will give you the most value.</p>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="sv">1,000+</div><div class="sl">Plugins Available</div></div>
+      <div class="stat-card"><div class="sv">Free</div><div class="sl">Always Free</div></div>
+      <div class="stat-card"><div class="sv">Safe</div><div class="sl">Jagex Approved</div></div>
+    </div>
+
+    <h2 id="how-to-install">How to Install RuneLite Plugins</h2>
+    <p>To install plugins on RuneLite, you first need to install the client itself. You can download it from the official website (<a href="https://runelite.net" target="_blank">runelite.net</a>) or through the Jagex Launcher by selecting RuneLite.</p>
+
+    <img src="images/blog/best-runelite-plugins/Downloadingrunelite.png" alt="RuneLite settings panel" class="post-img" />
+
+    <p>After installing the app, you can find plugins by opening the sidebar toolbar. Each plugin has a settings icon next to it, allowing you to tweak its features to suit your needs. However, not all plugins are available there — some, especially newer ones, need to be installed through the Plugin Hub.</p>
+
+    <div class="steps">
+      <div class="step"><div class="step-num"></div><div class="step-body">Download and install RuneLite from <strong>runelite.net</strong> or via the Jagex Launcher.</div></div>
+      <div class="step"><div class="step-num"></div><div class="step-body">Open the sidebar toolbar and click the <strong>plug icon</strong> to open the Plugin Hub.</div></div>
+      <img src="images/blog/best-runelite-plugins/runelitesettings.png" alt="RuneLite Plugin Hub" />
+      <div class="step"><div class="step-num"></div><div class="step-body"><strong>Search for the plugin</strong> by name and click Install.</div></div>
+      <img src="images/blog/best-runelite-plugins/pluginhub.png" alt="RuneLite Plugin Hub" />
+      <div class="step"><div class="step-num"></div><div class="step-body">Once installed, click the <strong>settings icon</strong> next to the plugin to customise it to your needs.</div></div>
+    </div>
+
+<div class="callout"><strong>Note:</strong> Always download RuneLite from the official website (runelite.net) or the Jagex Launcher. Avoid third-party sources to keep your account safe.</div>    
+
+    <h2 id="best-plugins">Best RuneLite Plugins</h2>
+    <p>Below are the top picks from the bald.gg team — sorted by category and usefulness. These are the ones that actually make a noticeable difference.</p>
+
+  
+
+      <div> 
+        <h3> AFK Overlay </h3>
+        <div class="plugin-card-body">
+           <p>This plugin is a must-have for players doing any AFK activity. It opens a small, movable, resizable window that shows your current HP and Prayer, remaining inventory slots, and idle status. You can also set it to change color when you go idle or when your HP, Prayer, or inventory hits a certain threshold. </p>
+            <img src="images/blog/best-runelite-plugins/afkoverlayplugin.png" alt="AFK overlay plugin"/>
+          <p> It can be a lifesaver, especially for tasks like Slayer, and makes AFK skilling much easier. You can even use it across multiple accounts, each with its own overlay.</p>
+        </div>
+      </div>
+
+      <div>
+  <h3>Bank Organizer</h3>
+  <div class="plugin-card-body">
+      <p>If you’ve been procrastinating organizing your bank, it might have actually paid off. This plugin makes it so much easier. It helps you sort things out by highlighting different groups of items. </p>
+       <img src="images/blog/best-runelite-plugins/bank_organizer.png" alt="Bank Organizer plugin"/>
+<p>It categorizes items like combat gear, skilling tools, food, potions, and more, and highlights each group with different colours. This makes it easy to mindlessly move items into the correct bank tab.</p>
+<p> Simply install it from the Plugin Hub, then open the settings icon next to it in your plugins list. From there, you can tick each category and customize the colour for each one.</p>
+    </div>
+</div>
+
+<div>
+  <h3>Configurable Slayer Tasks</h3>
+  <div class="plugin-card-body">
+    <p>This plugin lets you customize the information overlayed on your screen when you’re assigned a Slayer task. It’s a really useful plugin that removes a lot of the thinking you’d normally have to do. </p>
+    <img src="images/blog/best-runelite-plugins/configurableslayertasks.png" alt="Configurable Slayer Tasks plugin"/>
+<p> You can add details like the best gear to use, monster weaknesses, and any extra notes for each task. You can also mark locations on the world map to guide you.
+<p>When you’re assigned that task, the plugin overlays your saved information on screen and points you to your marked location—similar to how the quest helper and clue scroll plugins work.</p>
+<p> It can be configured for every single Slayer task, making it extremely useful if you want a smoother and more efficient experience. </p>
+    
+    <p>It’s especially useful for efficiency-focused players who want quick access to task setups without checking external guides.</p>
+  </div>
+</div>
+
+<div>
+  <h3>Fixed-Resizable Layout</h3>
+  <div class="plugin-card-body">
+    <p>This plugin lets you keep the fixed mode aesthetics while still benefiting from resizable mode, such as a larger game viewport and a minimizable chat box. It’s a game-changer for players who have always wanted the best of both worlds. </p>
+    <img src="images/blog/best-runelite-plugins/fixedresizeablehybrid.png" alt="Fixed Resizable Layout plugin"/>
+<p> To use it, install and enable it through the Plugin Hub, then set your game client layout to Resizable – Classic in the display settings. For the best results, enable Stretched Mode and set scaling to 100% to prevent gaps between the inventory and minimap.
+</p>
+    
+    <p>Enable it through the Plugin Hub, then set your layout to Resizable – Classic. Enable Stretched Mode and set scaling to 100% for best results.</p>
+  </div>
+</div>
+
+<div>
+  <h3>Gemstone Crab</h3>
+  <div class="plugin-card-body">
+    <p>The Gemstone Crab has quickly become one of the best ways to train combat. This plugin is designed to improve your AFK experience there, helping you maintain the best possible XP rates by minimizing downtime.</p>
+    <img src="images/blog/best-runelite-plugins/gemstonefightstats.png" alt="Gemstone Crab plugin"/>
+    <img src="images/blog/best-runelite-plugins/Gemstonealert.png" alt="Gemstone Crab plugin"/>
+<p>It tracks the crab’s HP and sends a desktop notification when it reaches a user-defined threshold (default: 2%), and also highlights the tunnel once the crab dies. It also displays useful fight stats, including DPS, total Gemstone Crabs killed, and total cumulative XP gained.
+</p>
+    
+    <p>It helps you maximize AFK combat training efficiency while keeping full awareness of kill tracking and XP gains.</p>
+  </div>
+</div>
+
+
+<div>
+  <h3>Glamourer</h3>
+  <div class="plugin-card-body">
+    <p>This RuneLite plugin got a lot of attention when it was first released. It lets players customize the appearance of nearly any item purely for fashion. The main downside is that these changes are client-side, so no other player will be able to see them. </p>
+     <img src="images/blog/best-runelite-plugins/Glamourer.png" alt="Glamourer plugin"/>
+<p>You can also change whether the glamour on certain items appears on other players on your screen, which adds even more control over how things look. Another nice feature is that you can import and export plates, making it easy to save your outfits or share your ideas with friends.
+</p>
+  </div>
+</div>
+
+<div>
+  <h3>More Status Bars</h3>
+  <div class="plugin-card-body">
+    <p>This plugin enhances the default status bars by letting you display up to four at once near your inventory. You can track Hitpoints, Prayer, Run Energy, Special Attack, and even Warmth while at Wintertodt. </p>
+    <img src="images/blog/best-runelite-plugins/Morestatusbars.png" alt="More Status Bars plugin"/>
+<p> It makes it much easier to see everything at a glance without looking up to the usual interface, and since it’s positioned close to your inventory, it feels more natural to check while interacting with items.
+</p>
+    
+  </div>
+</div>
+
+<div>
+  <h3>Random Events Helper</h3>
+  <div class="plugin-card-body">
+    <p>This plugin highlights the solution to each random event in the game. Most players usually skip these since the rewards aren’t always worth the time it takes to solve the puzzles, but with this, you can quickly speed through them and still earn the rewards. </p>
+<img src="images/blog/best-runelite-plugins/randomeventshelper.png" alt="Random Events Helper plugin"/>
+    <p> This is especially helpful for Ironman accounts, since you can get lucky with items that might otherwise be difficult or time-consuming to obtain.
+</p>
+    
+  </div>
+</div>
+
+<div>
+  <h3>Visibility</h3>
+  <div class="plugin-card-body">
+    <p>This plugin was built for raid teams to improve visibility during group content. It lets you adjust opacity so you can focus on what matters without unnecessary distractions. It’s mainly aimed at content like Tombs of Amascut, Chambers of Xeric, Theatre of Blood, and Nex. </p>
+     <img src="images/blog/best-runelite-plugins/visibilityplugin.png" alt="Visibility plugin"/>
+<p> You can hide or adjust the opacity of other players, your own projectiles, thralls, and your teammates’ projectiles. It also provides outline options for yourself, thralls, and teammates, making it easier to track everything during intense encounters.
+</p>
+  </div>
+</div>
+
+<div>
+  <h3>Fishing Spot Tracker</h3>
+  <div class="plugin-card-body">
+    <p>Before, RuneLite could only highlight active fishing spots, and players had no way of knowing when they would deplete (except for Minnows). With this plugin, you can now see exactly how long each fishing spot will last. </p>
+     <img src="images/blog/best-runelite-plugins/fishingspottracker.png" alt="Fishing Spot Tracker plugin"/>
+<p>It features a pie timer that fills and drains, giving a clear visual of when it’s time to move. There’s also a color gradient that shifts from cyan (full) to red (expiring), along with a timer, idle notifications, and a gold star highlighting the next fishing spot.
+</p>
+   
+    <p>It makes AFK fishing much smoother by helping you predict when spots will disappear.</p>
+  </div>
+</div>
+
+<diV>
+
+    <h2 id="sailing-plugins">Best Sailing Plugins</h2>
+    <p>Since Sailing is relatively new, plugins are just starting to come out that make the skill a lot easier to train. Even players who already have 99 can definitely say these would have been a game-changer for them.</p>
+
+   <div>
+  <h3>Sailing</h3>
+  <div class="plugin-card-body">
+    <p>This is an all-purpose plugin for Sailing. It highlights rapids, trimmable sails, sea charting locations, and crates in Barracuda Trials, along with many other features. </p>
+    <img src="images/blog/best-runelite-plugins/sailing.png" alt="sailing plugin"/>
+    <p> Once installed,  you can easily spot any of them and get some extra XP where possible.
+
+ </p>
+     
+  </div>
+</div>
+
+<div>
+  <h3>Deep Sea Trawling Plugin</h3>
+  <div class="plugin-card-body">
+    <p>This plugin makes the Deep Sea Trawling activity much easier by helping you track different fish shoals and their depths. </p>
+    <img src="images/blog/best-runelite-plugins/deepseatrawling.png" alt="Deep sea trawling plugin "/>
+    <p>  It shows shoal paths, tags each shoal with a coloured square, includes a depth indicator for each one, and even highlights the UI buttons you need to click, along with many other features. It turns a tedious skilling method into something much more enjoyable.
+ </p>
+     
+  </div>
+</div>
+
+<div>
+  <h3>Barracuda Trials Pathfinder </h3>
+  <div class="plugin-card-body">
+    <p>This plugin shows the quickest path to follow for all three Barracuda Trials: Tempest Tantrum, Jubbly Jive, and Gwentih Glide. </p>
+    <img src="images/blog/best-runelite-plugins/Barracudapathfinder.png" alt="Barracuda Pathfinder"/>
+    <p> It also lets you choose between relaxed paths (smoother routes) or efficient ones (more speed boosts and tighter turns).
+ </p>
+     
+  </div>
+</div>
+
+<div>
+  <h3>Salvage Sack</h3>
+  <div class="plugin-card-body">
+    <p>This plugin shows salvage loot based on shipwreck type, from small shipwrecks all the way up to merchant shipwrecks. </p>
+    <img src="images/blog/best-runelite-plugins/Salvage.png" alt="Salvage Sack"/>
+    <p> Once installed, it’s enabled by default. Click the Salvage Sack icon in the RuneLite sidebar to open the panel, then just play Sailing and salvage as usual. The panel will automatically update with your loot as you go — no setup needed.
+ </p>
+     
+  </div>
+</div>
+</div>
+
+    <h2 id="faq">FAQ</h2>
+    <div class="faq-item open">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Are RuneLite plugins safe to use? <span class="faq-arrow">›</span></div>
+      <div class="faq-a">Yes, as long as you're using the official RuneLite client. All plugins on the Plugin Hub are reviewed before being added, so they follow the game's rules.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do plugins give unfair advantages or get you banned? <span class="faq-arrow">›</span></div>
+      <div class="faq-a">No. RuneLite plugins are designed to stay within Jagex's guidelines. They improve quality of life but don't automate gameplay or play the game for you.</div>
+    </div>
+
+    
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need all these plugins? <span class="faq-arrow">›</span></div>
+      <div class="faq-a">Not at all. Most players only use a handful of plugins regularly. It's better to pick the ones that match your playstyle instead of installing everything at once.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will plugins slow down my game? <span class="faq-arrow">›</span></div>
+      <div class="faq-a">In most cases, no. RuneLite is lightweight and most plugins have minimal impact. However, using too many at once — especially visual-heavy ones — can affect performance on lower-end systems.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What's the best way to find new plugins? <span class="faq-arrow">›</span></div>
+      <div class="faq-a">The Plugin Hub is the best place to start. You can search by name or browse categories, and new plugins are added regularly. Keeping an eye on updates helps you stay ahead.</div>
+    </div>
+
+  </article>
+
+  <aside class="post-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-head">Quick Stats</div>
+      <div class="sidebar-card-body">
+        <div class="quick-stat"><span class="qs-label">Plugins Covered</span><span class="qs-val gold">15</span></div>
+        <div class="quick-stat"><span class="qs-label">Cost</span><span class="qs-val green">Free</span></div>
+        <div class="quick-stat"><span class="qs-label">Jagex Approved</span><span class="qs-val green">Yes</span></div>
+        <div class="quick-stat"><span class="qs-label">Plugin Hub Required</span><span class="qs-val">Some plugins</span></div>
+        <div class="quick-stat"><span class="qs-label">Ironman Friendly</span><span class="qs-val green">Yes</span></div>
+        <div class="quick-stat"><span class="qs-label">Last Updated</span><span class="qs-val">April 2026</span></div>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-card-head">Contents</div>
+      <div class="sidebar-card-body" style="padding: 8px 16px;">
+        <ul class="toc-list">
+          <li><a href="#how-to-install">How to Install</a></li>
+          <li><a href="#best-plugins">Best Plugins</a></li>
+          <li><a href="#downloading-runelite">Downloading RuneLite</a></li>
+          <li><a href="#sailing-plugins">Sailing Plugins</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-card" style="border-color: var(--gold-dim); background: linear-gradient(135deg, var(--bg-surface), rgba(200,168,75,0.04));">
+      <div class="sidebar-card-head" style="color: var(--gold);">Skip the Grind</div>
+      <div class="sidebar-card-body">
+        <p style="font-size:0.85rem; color: var(--text-muted); margin-bottom: 14px;">Rather someone else handle the grind? Our team can take care of it, even on Ironman.</p>
+        <a href="https://bald.gg/services" style="display:block; background: var(--gold); color: #0d0e0f; text-align: center; padding: 10px; border-radius: 3px; font-family: var(--font-heading); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; transition: background 0.15s;" onmouseover="this.style.background='var(--gold-bright)'" onmouseout="this.style.background='var(--gold)'">View Services</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="divider"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2026 bald.gg — OSRS Services. Not affiliated with Jagex Ltd.</span>
+    <div class="footer-links">
+      <a href="https://bald.gg/why-trust-us">Why Trust Us</a>
+      <a href="https://bald.gg/terms-of-service">Terms</a>
+      <a href="https://bald.gg/ourteam">Team</a>
+      <a href="https://bald.gg/services">All Services</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      document.querySelectorAll('.faq-item.open').forEach(o => { if (o !== item) o.classList.remove('open'); });
+    });
+  });
+  const sections = document.querySelectorAll('[id]');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+    tocLinks.forEach(a => { a.classList.remove('active'); if (a.getAttribute('href') === '#' + current) a.classList.add('active'); });
+  });
+</script>
+</body>
+</html>
